@@ -1,1 +1,100 @@
+body {
+  margin: 50px;
+  font-family: "avenir", sans-serif;
+}
 
+h1 {
+  text-align: center;
+  color: #455A64;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.header > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.species-map {
+  position: absolute;
+  top: 120px;
+  height: 1200;
+}
+
+.animal-icon {
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+}
+
+.animal-icon p {
+  margin: 0;
+}
+
+.animal-picture {
+  width: 100px;
+  opacity: .85;
+  border-radius: 10px;
+}
+
+#world-map {
+  width: 1200px;
+  position: relative;
+  left: 30px;
+}
+
+#bat {
+  position: absolute;
+  top: 160px;
+  right: 200px;
+}
+
+#dik {
+  position: absolute;
+  top: 270px;
+  left: 650px;
+}
+
+#echidna {
+  position: absolute;
+  top: 370px;
+  right: 105px;
+}
+
+#snail {
+  position: absolute;
+  top: 50px;
+  left: 560px;
+}
+
+#marmoset {
+  position: absolute;
+  top: 280px;
+  left: 340px;
+}
+
+#pika {
+  position: absolute;
+  top: 55px;
+  left: 190px;
+}
+
+#seal {
+  position: absolute;
+  bottom: 10px;
+  left: 500px;
+}
