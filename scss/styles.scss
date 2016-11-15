@@ -1,18 +1,16 @@
 body {
   margin: 50px;
-  font-family: "avenir", sans-serif;
-}
-
-h1 {
-  text-align: center;
-  color: #455A64;
+  font-family: "Avenir", sans-serif;
+  background-color: #DCEDC8;
+  font-size: 17px;
+  color: black;
 }
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 120px;
   width: 100%;
   z-index: 1;
   background-color: white;
@@ -27,12 +25,28 @@ h1 {
 
 .header h1 {
   text-align: center;
+  color: #455A64;
+  margin-top: 37px;
+}
+
+h2 {
+  width: 100%;
+  position: relative;
+  top: 120px;
+  text-align: center;
+  color: #607D8B;
+  margin: 0;
 }
 
 .species-map {
   position: absolute;
-  top: 120px;
-  height: 1200;
+  height: 1200px;
+  width: 1200px;
+  top: 240px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  margin: 0 auto;
 }
 
 .animal-icon {
@@ -41,20 +55,39 @@ h1 {
   text-align: center;
 }
 
-.animal-icon p {
+.animal-icon > p {
   margin: 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px gray;
 }
 
 .animal-picture {
   width: 100px;
   opacity: .85;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 #world-map {
   width: 1200px;
   position: relative;
   left: 30px;
+  border-radius: 48%;
+  z-index: -1;
+}
+
+.animal-detail {
+  display: none;
+  height: auto;
+  width: 300px;
+  background:rgba(0,0,0,0.5);
+  border-radius: 10px;
+  transform: translate(-30%, 0);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 #bat {
@@ -63,10 +96,18 @@ h1 {
   right: 200px;
 }
 
+#bat:hover > #bat-detail {
+  display: block;
+}
+
 #dik {
   position: absolute;
   top: 270px;
   left: 650px;
+}
+
+#dik:hover > #dik-detail {
+  display: block;
 }
 
 #echidna {
@@ -75,10 +116,18 @@ h1 {
   right: 105px;
 }
 
+#echidna:hover > #echidna-detail {
+  display: block;
+}
+
 #snail {
   position: absolute;
   top: 50px;
   left: 560px;
+}
+
+#snail:hover > #snail-detail {
+  display: block;
 }
 
 #marmoset {
@@ -87,14 +136,26 @@ h1 {
   left: 340px;
 }
 
+#marmoset:hover > #marmoset-detail {
+  display: block;
+}
+
 #pika {
   position: absolute;
-  top: 55px;
+  top: 75px;
   left: 190px;
+}
+
+#pika:hover > #pika-detail {
+  display: block;
 }
 
 #seal {
   position: absolute;
-  bottom: 10px;
+  top: 430px;
   left: 500px;
+}
+
+#seal:hover > #seal-detail {
+  display: block;
 }
